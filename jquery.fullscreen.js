@@ -25,11 +25,11 @@
 
         if (typeof options === 'object') {
           if (options['afterMaximizeAnimation']) {
-            after_max_anim = options['afterAnimation'];
+            after_max_anim = options['afterMaximizeAnimation'];
           }
 
           if (options['afterRestoreAnimation']) {
-            after_restore_anim = options['afterAnimation'];
+            after_restore_anim = options['afterRestoreAnimation'];
           }
 
           if (options['afterMaximize']) {
