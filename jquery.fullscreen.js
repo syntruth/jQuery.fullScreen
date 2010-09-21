@@ -188,7 +188,7 @@
           
           $('body').css({overflow: "auto"});
 
-          data['expanded'] = true;
+          data['expanded'] = false;
           $this.data('fullscreen', data);
         }
       });
