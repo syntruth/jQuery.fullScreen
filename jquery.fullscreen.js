@@ -48,6 +48,7 @@
         var otop  = $this.offset().top;
         var oleft = $this.offset().left;
 
+        // Need I say it? MSIE does things wierdly.
         if ($.browser.msie) {
           var owidth  = $this.outerWidth();
           var oheight = $this.outerHeight();
@@ -196,8 +197,7 @@
     }
   };
 
-  jQuery.fn.fullScreen = function(options) {
-
+  jQuery.fn.fullScreen = function(method) {
     if (methods[method]) {
       return methods[method].apply(this, 
         Array.prototype.slice.call(arguments, 1)
@@ -209,8 +209,6 @@
     else {
       $.error( 'Method ' +  method + ' does not exist on jQuery.fullScreen');
     }
-
   };
-
 })( jQuery );
 
